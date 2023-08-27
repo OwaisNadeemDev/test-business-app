@@ -76,3 +76,10 @@ input.form-control{
   color: rgba(255, 0, 0, 0.789);
   margin: 5px 2px;
 }
+
+
+@media only screen and (max-width: 700px) {
+  .careers-form{
+    width: 91%;
+  }
+}

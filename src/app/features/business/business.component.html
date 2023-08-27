@@ -7,7 +7,7 @@
 <section class="business-section">
   <h3 class="text-center">Business We Back</h3>
   <div class="d-flex flex-wrap gap-4 justify-content-center align-items-center">
-    <div class="col-3">
+    <div class="col-12 col-md-3">
       <ngb-carousel>
         <ng-container *ngFor="let image of images">
           <ng-template ngbSlide>
@@ -18,7 +18,7 @@
         </ng-container>
       </ngb-carousel>
     </div>
-    <div class="col-4 text-end">
+    <div class="col-12 col-md-4 text-md-end ps-4 ps-md-0">
       <h2>Restaurants</h2>
       <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, officiis?</p>
       <button class="btn-outlined">Contact Us</button>
@@ -28,7 +28,7 @@
 
 
 <section class="service-section">
-  <div class="custom-shape-divider-top-1693093920">
+  <div class="custom-shape-divider-top-1693093920 d-none d-md-block">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
     </svg>
@@ -51,14 +51,14 @@
 <section class="explore-section">
   <div class="container-fluid p-0">
     <div class="d-flex flex-wrap">
-      <div class="col-6 d-flex justify-content-center align-items-center">
+      <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
           <div  class="p-5">
             <h2>Explore Our Work and <br> Community</h2>
             <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, <br> officiis?</p>
             <button class="btn-outlined">Explore More</button>
           </div>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-md-6">
         <ngb-carousel>
           <ng-container *ngFor="let image of images">
             <ng-template ngbSlide>
