@@ -1,0 +1,142 @@
+.hero-section{
+  height: calc(100vh - 150px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../../assets/hero-image.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+}
+
+.hero-section h1{
+  font-size: 5rem;
+  color: #fff;
+}
+
+.description{
+  padding-left: 5rem;
+}
+
+.business-section{
+  padding: 10rem 0;
+}
+
+section > h3{
+  font-size: 2.2rem;
+  font-weight: 900;
+  padding: 0 0 50px 0;
+}
+
+::ng-deep .business-section .carousel-control-next{
+  display: none;
+}
+
+::ng-deep .business-section .carousel-indicators [data-bs-target]{
+  width: 13px !important;
+  height: 13px !important;
+  background-color: #fff;
+  background-clip: unset;
+  border-top: unset !important;
+  border-bottom: unset !important;
+  border-radius: 100vw !important;
+}
+
+.business-section h2{
+  padding: 30px 0;
+  font-weight: 800;
+}
+
+.business-section .description{
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 140px;
+}
+
+.business-section button{
+  font-size: 20px;
+  padding: 7px 20px;
+  border: 1px solid #3abeba;
+  color: #3abeba;
+  background-color: transparent;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.business-section button:hover{
+  background-color: #3abeba;
+  color: #fff;
+}
+
+.service-section{
+  position: relative;
+  min-height: 100vh;
+  background-color: #fbdc08;
+  padding: 12rem 0;
+}
+
+.service-section > h2{
+  padding: 40px 0;
+}
+.custom-shape-divider-top-1693093920 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1693093920 svg {
+  position: relative;
+  display: block;
+  width: calc(124% + 1.3px);
+  height: 140px;
+}
+
+.custom-shape-divider-top-1693093920 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.service-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(470px,1fr));
+  gap: 50px;
+  margin: 30px 0;
+  justify-content: center;
+}
+
+.service-card{
+  max-width: 470px;
+  width: 470px;
+  background-color: #fff;
+  padding: 30px 40px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 4px;
+  min-height: 430px;
+}
+.service-card .title{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.service-card .title{
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.service-card img{
+  width: 120px;
+}
+
+.service-card .title{
+  font-size: 36px;
+  font-weight: 800;
+  margin: 20px 0;
+}
+
+.service-card .card-description{
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+}

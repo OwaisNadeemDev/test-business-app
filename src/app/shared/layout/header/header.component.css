@@ -2,11 +2,34 @@ nav{
   display: flex;
   align-items: center;
   height: 100%;
+  background-color: #fff;
 }
 nav ul{
   width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
+  gap: 40px;
+}
+nav li{
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+}
 
+nav li button{
+  background-color: #3abeba;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+nav li.active{
+  color: #3abeba;
+}
+
+nav .logo img{
+  width: 180px;
 }

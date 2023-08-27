@@ -1,0 +1,46 @@
+<section class="hero-section">
+  <h1>Build a Better Business
+    <br>
+    with Hey Karry
+  </h1>
+</section>
+<section class="business-section">
+  <h3 class="text-center">Business We Back</h3>
+  <div class="d-flex flex-wrap gap-4 justify-content-center align-items-center">
+    <div class="col-3">
+      <ngb-carousel>
+        <ng-container *ngFor="let image of images">
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="image"/>
+            </div>
+          </ng-template>
+        </ng-container>
+      </ngb-carousel>
+    </div>
+    <div class="col-4 text-end">
+      <h2>Restaurants</h2>
+      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, officiis?</p>
+      <button>Contact Us</button>
+    </div>
+  </div>
+</section>
+
+
+<section class="service-section">
+  <div class="custom-shape-divider-top-1693093920">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+  <h2 class="text-center">Take Control of Your Customer Engagement</h2>
+  <div class="service-container col-8 mx-auto">
+    <div *ngFor="let card of serviceCards" class="service-card">
+      <span class="icon"><img [src]="card?.src"></span>
+      <div class="title">{{card?.title}}</div>
+      <div class="card-description">
+        {{card?.description}}
+      </div>
+    </div>
+  </div>
+</section>

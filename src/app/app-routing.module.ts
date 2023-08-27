@@ -5,7 +5,8 @@ import { FullComponent } from './shared/layout/full/full.component';
 const routes: Routes = [
   {
     path: '',
-    component: FullComponent
+    component: FullComponent,
+    loadChildren: ()=> import("./features/features.module").then((m)=> m.FeaturesModule)
   }
 ];
 
