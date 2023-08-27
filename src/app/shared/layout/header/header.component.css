@@ -32,7 +32,8 @@ nav li:nth-child(2){
   margin-left: auto;
   padding-left: 5rem;
 }
-nav li:last-child{
+
+nav .contact{
   margin-right: auto;
 }
 
@@ -69,6 +70,7 @@ ul.mobile-nav li{
   padding: 17px 12px;
   border-radius: 20px;
   width: 187px;
+  cursor: pointer;
 }
 
 ul.mobile-nav li.active{

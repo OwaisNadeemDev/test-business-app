@@ -4,7 +4,7 @@
       <img src="../../../../assets/logo.png">
     </li>
     <li class="d-none d-md-block" [ngClass]="{'active': activeUrl === item?.path}" *ngFor="let item of navItems" [routerLink]="item?.path ? item.path : null ">{{item?.name}}</li>
-    <li class="d-none d-md-block">
+    <li class="d-none d-md-block contact">
       <button class="primary-btn">Contact Us</button>
     </li>
     <button (click)="toggleMobileMenu()" class="d-block d-md-none menu-button ms-auto">
