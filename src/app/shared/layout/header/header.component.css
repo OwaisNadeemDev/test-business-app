@@ -13,7 +13,7 @@ nav ul{
 }
 nav li{
   cursor: pointer;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   color: #000;
 }
@@ -31,5 +31,5 @@ nav li.active{
 }
 
 nav .logo img{
-  width: 180px;
+  width: 130px;
 }

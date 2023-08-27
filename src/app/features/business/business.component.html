@@ -21,7 +21,7 @@
     <div class="col-4 text-end">
       <h2>Restaurants</h2>
       <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, officiis?</p>
-      <button>Contact Us</button>
+      <button class="btn-outlined">Contact Us</button>
     </div>
   </div>
 </section>
@@ -40,6 +40,34 @@
       <div class="title">{{card?.title}}</div>
       <div class="card-description">
         {{card?.description}}
+      </div>
+    </div>
+  </div>
+
+  <button class="request-btn">Request a Demo</button>
+</section>
+
+
+<section class="explore-section">
+  <div class="container-fluid p-0">
+    <div class="d-flex flex-wrap">
+      <div class="col-6 d-flex justify-content-center align-items-center">
+          <div  class="p-5">
+            <h2>Explore Our Work and <br> Community</h2>
+            <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, <br> officiis?</p>
+            <button class="btn-outlined">Explore More</button>
+          </div>
+      </div>
+      <div class="col-6">
+        <ngb-carousel>
+          <ng-container *ngFor="let image of images">
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="image"/>
+              </div>
+            </ng-template>
+          </ng-container>
+        </ngb-carousel>
       </div>
     </div>
   </div>

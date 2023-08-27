@@ -1,5 +1,5 @@
 .hero-section{
-  height: calc(100vh - 150px);
+  height: calc(100vh - 110px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../../assets/hero-image.jfif);
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,11 +28,11 @@ section > h3{
   padding: 0 0 50px 0;
 }
 
-::ng-deep .business-section .carousel-control-next{
+::ng-deep .carousel-control-next, ::ng-deep .carousel-control-prev{
   display: none;
 }
 
-::ng-deep .business-section .carousel-indicators [data-bs-target]{
+::ng-deep .carousel-indicators [data-bs-target]{
   width: 13px !important;
   height: 13px !important;
   background-color: #fff;
@@ -53,7 +53,7 @@ section > h3{
   padding-left: 140px;
 }
 
-.business-section button{
+.btn-outlined{
   font-size: 20px;
   padding: 7px 20px;
   border: 1px solid #3abeba;
@@ -63,7 +63,7 @@ section > h3{
   transition: all 0.3s ease;
 }
 
-.business-section button:hover{
+.btn-outlined:hover{
   background-color: #3abeba;
   color: #fff;
 }
@@ -72,7 +72,7 @@ section > h3{
   position: relative;
   min-height: 100vh;
   background-color: #fbdc08;
-  padding: 12rem 0;
+  padding: 12rem 0 6rem 0;
 }
 
 .service-section > h2{
@@ -100,43 +100,63 @@ section > h3{
 
 .service-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(470px,1fr));
-  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 40px;
   margin: 30px 0;
   justify-content: center;
 }
 
 .service-card{
-  max-width: 470px;
-  width: 470px;
+  max-width: 420px;
+  width: 390px;
   background-color: #fff;
-  padding: 30px 40px;
+  padding: 20px 30px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 4px;
-  min-height: 430px;
-}
-.service-card .title{
-  font-size: 20px;
-  font-weight: bolder;
-}
-
-.service-card .title{
-  font-size: 17px;
-  font-weight: 400;
+  min-height: 345px;
 }
 
 .service-card img{
-  width: 120px;
+  width: 80px;
 }
 
 .service-card .title{
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 800;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .service-card .card-description{
   font-size: 20px;
   font-weight: 500;
   padding: 10px;
+}
+
+.request-btn{
+  background-color: #3abeba;
+  color: #000;
+  transition: all 0.3s ease;
+  padding: 10px 30px;
+  font-weight: 500;
+  border: none;
+  text-align: center;
+  display: block;
+  margin: 70px auto 0 auto;
+}
+
+.request-btn:hover{
+  background-color: #32cfcadd;
+  color: #fff;
+}
+
+::ng-deep .explore-section .picsum-img-wrapper img{
+  object-fit: contain;
+  width: 1400px;
+}
+
+.explore-section h2 {
+  font-weight: 700;
+}
+.explore-section p {
+  font-weight: 500;
 }
