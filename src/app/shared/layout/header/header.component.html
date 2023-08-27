@@ -3,9 +3,32 @@
     <li class="logo">
       <img src="../../../../assets/logo.png">
     </li>
-    <li [ngClass]="{'active': activeUrl === item?.path}" *ngFor="let item of navItems" [routerLink]="item?.path ? item.path : null ">{{item?.name}}</li>
-    <li>
+    <li class="d-none d-md-block" [ngClass]="{'active': activeUrl === item?.path}" *ngFor="let item of navItems" [routerLink]="item?.path ? item.path : null ">{{item?.name}}</li>
+    <li class="d-none d-md-block">
       <button class="primary-btn">Contact Us</button>
     </li>
+    <button (click)="toggleMobileMenu()" class="d-block d-md-none menu-button ms-auto">
+      <i class="fas fa-bars "></i>
+    </button>
   </ul>
 </nav>
+
+
+<div id="mobile-menu" class="mobile-menu d-block d-md-none">
+  <div class="d-flex justify-content-end py-3">
+    <button (click)="toggleMobileMenu()" class="close-btn ms-auto me-3">
+      <i class="fas fa-times-circle"></i>
+    </button>
+  </div>
+
+  <div class="mt-2">
+    <ul class="mobile-nav">
+      <li (click)="item.path ? toggleMobileMenu(item.path) : null" [ngClass]="{'active': activeUrl === item?.path}" *ngFor="let item of navItems; index as i">
+        {{item.name}}
+      </li>
+      <li>
+        <button class="primary-btn">Contact Us</button>
+      </li>
+    </ul>
+  </div>
+</div>

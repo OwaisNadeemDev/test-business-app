@@ -28,10 +28,70 @@ nav .logo img{
 }
 
 
-li:nth-child(2){
+nav li:nth-child(2){
   margin-left: auto;
   padding-left: 5rem;
 }
-li:last-child{
+nav li:last-child{
   margin-right: auto;
+}
+
+.menu-button{
+  background-color: transparent;
+  border: none;
+}
+.menu-button i{
+  font-size: 1.5rem;
+  color: #149EDF;
+}
+
+
+.mobile-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(20,158,223,1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0051ac",endColorstr="#149edf",GradientType=1);
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  z-index: 111;
+  transform: translate3d(-100%, 0px, 0px);
+  transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  color: #fff;
+}
+ul.mobile-nav li{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 20px;
+  padding: 17px 12px;
+  border-radius: 20px;
+  width: 187px;
+}
+
+ul.mobile-nav li.active{
+  background-color: #4ab9ed;
+}
+
+ul.mobile-nav li img{
+  width: 30px;
+}
+
+.close-btn{
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.close-btn i {
+  font-size: 2rem;
+  color: rgba(216, 12, 12, 0.816);
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover i {
+  color: rgb(127, 123, 123);
 }

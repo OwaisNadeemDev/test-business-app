@@ -54,3 +54,14 @@ li{
   background-color: #3abeba;
   color: #fff;
 }
+
+@media only screen and (max-width: 700px) {
+  .hero-section{
+    padding-left: 0px;
+    justify-content: center;
+  }
+  .hero-section h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
