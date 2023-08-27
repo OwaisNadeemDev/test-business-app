@@ -1,4 +1,4 @@
-# Angular App README
+# Test Business App README
 
 Welcome to the Angular app! This README provides instructions on how to set up and run the app on your local machine.
 
