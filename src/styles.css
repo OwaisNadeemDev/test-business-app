@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("../node_modules/ngx-toastr/toastr.css");
+
 *{
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -8,4 +10,47 @@
 
 li{
   list-style: none;
+}
+
+.hero-section{
+  height: calc(100vh - 110px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+}
+
+.hero-section h1{
+  font-size: 4rem;
+  color: #fff;
+}
+
+.primary-btn{
+    background-color: #3abeba;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease-out;
+}
+
+.primary-btn:hover{
+  background-color: #0cb4ae;
+}
+
+.btn-outlined{
+  font-size: 20px;
+  padding: 7px 20px;
+  border: 1px solid #3abeba;
+  color: #3abeba;
+  background-color: transparent;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.btn-outlined:hover{
+  background-color: #3abeba;
+  color: #fff;
 }

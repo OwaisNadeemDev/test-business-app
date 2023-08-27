@@ -3,14 +3,9 @@
     <li class="logo">
       <img src="../../../../assets/logo.png">
     </li>
-    <li class="ms-auto ps-5">Home</li>
-    <li>Business</li>
-    <li>C2C</li>
-    <li>Story</li>
-    <li>Blog</li>
-    <li>Careers</li>
-    <li class="me-auto">
-      <button>Contact Us</button>
+    <li [ngClass]="{'active': activeUrl === item?.path}" *ngFor="let item of navItems" [routerLink]="item?.path ? item.path : null ">{{item?.name}}</li>
+    <li>
+      <button class="primary-btn">Contact Us</button>
     </li>
   </ul>
 </nav>
